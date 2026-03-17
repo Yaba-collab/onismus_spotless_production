@@ -83,22 +83,12 @@ header {
   background: var(--magenta);
   color: white;
  }
-
-.custom-btn {
-  text-decoration: none;       /* Remove underline */
-  display: inline-block;       /* Make it behave like a button */
-  padding: 12px 28px;          /* Adjust size */
-  border-radius: 6px;          /* Rounded corners */
-  transition: all 0.3s ease;   /* Smooth hover animation */
-  background-color: #6c757d;   /* Bootstrap secondary color */
-  color: #fff;                 /* Text color */
-  font-weight: 500;            /* Optional: make text slightly bold */
+.btn-secondary {
+  background: var(--cyan);
+  color: white;
 }
-
-.custom-btn:hover {
-  background-color: #5a6268;   /* Slightly darker on hover */
-  transform: translateY(-2px); /* Subtle lift effect */
-  text-decoration: none;       /* Ensure underline stays gone */
+.no-underline {
+  text-decoration: none; /* removes underline */
 }
 /* ================= SECTIONS ================= */
 section {
