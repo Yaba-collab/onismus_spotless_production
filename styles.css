@@ -86,6 +86,7 @@ header {
 .btn-secondary {
   background: var(--cyan);
   color: white;
+  text-decoration: none; 
 }
 .no-underline {
   text-decoration: none; /* removes underline */
