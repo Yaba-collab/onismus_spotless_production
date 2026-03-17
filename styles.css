@@ -104,6 +104,17 @@ header {
 /* ================= SECTIONS ================= */
 section {
   padding: 80px 8%;
+  width: 400px;                /* Adjust width and height to make a square */
+  height: 400px;
+  background-color: var(--cyan);   /* Optional: light background to highlight text */
+  color: #007bff;              /* Blue text */
+  box-sizing: border-box;       /* Ensure padding doesn’t break the square */
+  border-radius: 8px;           /* Slightly rounded edges (optional) */
+  overflow-y: auto;             /* Scroll if text overflows */
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow for effect */
 }
 .section-title {
   text-align: center;
