@@ -83,10 +83,6 @@ header {
   background: var(--magenta);
   color: white;
  }
-.btn-secondary {
-  background: var(--cyan);
-  color: white;
-}
 
 .custom-btn {
   text-decoration: none;       /* Remove underline */
