@@ -112,7 +112,8 @@ section {
 .section-title {
   text-align: center;
   margin-bottom: 40px;
-  color: #007bff;              /* Blue text */
+  color: --magenta: #ff007f;             /* Blue text */
+  
 }
 /* ================= SERVICES ================= */
 .services {
