@@ -132,7 +132,14 @@ section {
   font-weight: 700;             /* Bold text */
   text-transform: uppercase;    /* Optional, all caps */
 }
-
+#about {
+    background-image: url('image/about-bg.jpg'); /* your background image */
+    background-size: cover;       /* cover the whole section */
+    background-position: center;  /* center the image */
+    padding: 60px 8%;
+    color: #333;                  /* make text readable */
+    border-radius: 8px;           /* optional */
+}
 /* ================= SERVICES ================= */
 .services {
   display: grid;
