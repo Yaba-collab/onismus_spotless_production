@@ -82,6 +82,7 @@ header {
 .btn-primary {
   background: var(--magenta);
   color: white;
+  text-decoration: none;
   display: inline-block;       /* Make it behave like a button */
   padding: 12px 28px;          /* Adjust size */
   border-radius: 6px;          /* Rounded corners */
