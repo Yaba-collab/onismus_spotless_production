@@ -101,6 +101,22 @@ header {
 .no-underline {
   text-decoration: none; /* removes underline */
 }
+
+/* About Us box */
+.about-box {
+  border: 3px solid #007BFF; /* Blue border, change color as needed */
+  border-radius: 10px;        /* Rounded corners */
+  padding: 20px;              /* Space inside the box */
+  max-width: 900px;           /* Optional: limits width */
+  margin: 20px auto;          /* Centers the box */
+  background-color: #f9f9f9;  /* Optional: light background */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+.about-box p {
+  text-align: justify; /* Better readability */
+  line-height: 1.6;
+}
+
 /* ================= SECTIONS ================= */
 section {
   padding: 80px 8%;
