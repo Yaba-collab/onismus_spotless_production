@@ -191,6 +191,18 @@ section {
 .portfolio-item:hover .overlay {
   opacity: 1;
 }
+
+/* Portfolio animation */
+.portfolio-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.portfolio-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* ================= WHY ================= */
 .why {
   display: grid;
