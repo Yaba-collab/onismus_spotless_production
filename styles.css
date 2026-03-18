@@ -102,20 +102,36 @@ header {
   text-decoration: none; /* removes underline */
 }
 
+/* ================= VARIABLES ================= */
+:root {
+  --magenta: #ff007f;      /* Main accent color */
+  --section-padding-vertical: 80px;
+  --section-padding-horizontal: 8%;
+  --section-radius: 8px;
+  --font-family: Arial, sans-serif;
+}
 
-‎/* ================= SECTIONS ================= */
-‎section {
-‎  padding: 80px 8%;
-‎  box-sizing: border-box;       /* Ensure padding doesn’t break the square */
-‎  border-radius: 8px;           /* Slightly rounded edges (optional) */
-‎  font-family: Arial, sans-serif;
-‎  text-align: justify;
-‎}
-‎.section-title {
-‎  text-align: center;
-‎  margin-bottom: 40px;
-‎  color: --magenta: #ff007f;             /* Blue text */
-‎}
+/* ================= SECTIONS ================= */
+section {
+  padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+  box-sizing: border-box;       /* Ensure padding doesn’t break layout */
+  border-radius: var(--section-radius); /* Rounded corners */
+  font-family: var(--font-family);
+  text-align: justify;          /* Align text both left and right */
+  background-color: #f8f8f8;    /* Optional light background */
+  margin-bottom: 60px;          /* Space between sections */
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title {
+  text-align: center;           /* Center the heading */
+  margin-bottom: 40px;          /* Space below title */
+  color: var(--magenta);        /* Use the accent color */
+  font-size: 2rem;              /* Nice readable size */
+  font-weight: 700;             /* Bold text */
+  text-transform: uppercase;    /* Optional, all caps */
+}
+
 /* ================= SERVICES ================= */
 .services {
   display: grid;
