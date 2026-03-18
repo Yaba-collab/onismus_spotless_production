@@ -242,6 +242,59 @@ section {
   transform: translateY(0);
 }
 /* ================= WHY ================= */
+/* WHY CHOOSE US */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.why-card {
+  padding: 30px 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.why-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.why-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* DIFFERENT COLORS */
+.card1 {
+  background: linear-gradient(135deg, #ff6a00, #ffb347);
+}
+
+.card2 {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+.card3 {
+  background: linear-gradient(135deg, #28a745, #7bed9f);
+}
+
+.card4 {
+  background: linear-gradient(135deg, #6f42c1, #a18cd1);
+}
+
+/* HOVER EFFECT */
+.why-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
 .why {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
