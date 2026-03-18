@@ -131,29 +131,35 @@ section {
 .card:hover {
   transform: translateY(-8px);
 }
-/* Base card style */
+/* Base card style with glassmorphism */
 .services .card {
-  padding: 20px;
+  padding: 25px;
   margin: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: white;
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.4s, box-shadow 0.4s, background 0.4s;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+/* Hover effect */
 .services .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 
-/* Different colors for each card */
-.services .card:nth-child(1) { background-color: #f44336; } /* red */
-.services .card:nth-child(2) { background-color: #ff9800; } /* orange */
-.services .card:nth-child(3) { background-color: #4caf50; } /* green */
-.services .card:nth-child(4) { background-color: #2196f3; } /* blue */
-.services .card:nth-child(5) { background-color: #9c27b0; } /* purple */
+/* Unique gradient backgrounds for each card */
+.services .card:nth-child(1) { background: linear-gradient(135deg, #f44336, #ff7961); }
+.services .card:nth-child(2) { background: linear-gradient(135deg, #ff9800, #ffc947); }
+.services .card:nth-child(3) { background: linear-gradient(135deg, #4caf50, #80e27e); }
+.services .card:nth-child(4) { background: linear-gradient(135deg, #2196f3, #6ec6ff); }
+.services .card:nth-child(5) { background: linear-gradient(135deg, #9c27b0, #d05ce3); }
+
 /* ================= PORTFOLIO ================= */
 .portfolio {
   display: grid;
