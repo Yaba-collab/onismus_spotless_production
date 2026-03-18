@@ -21,3 +21,21 @@ function validateForm(){
   alert("Message sent successfully!");
   return true;
 }
+
+// Portfolio scroll animation
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+function scrollAnimate() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  portfolioItems.forEach(item => {
+    const itemTop = item.getBoundingClientRect().top;
+
+    if(itemTop < triggerBottom) {
+      item.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollAnimate);
+window.addEventListener('load', scrollAnimate); // trigger on page load too
